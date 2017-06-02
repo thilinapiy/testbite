@@ -1,0 +1,13 @@
+project: testbite
+environments:
+  - name: Development
+    namespace: spring-dev
+    deployment:
+      method: rolling-upgrade
+    services:
+      - name: spring-app
+        external_url: spring-testbite.prsn.io
+        port: 8080 
+        ssl: "false"
+        replicas: 2
+
