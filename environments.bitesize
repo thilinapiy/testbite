@@ -1,7 +1,7 @@
 project: testbite
 environments:
   - name: Development
-    namespace: spring-dev
+    namespace: testbite-dev
     deployment:
       method: rolling-upgrade
     services:
